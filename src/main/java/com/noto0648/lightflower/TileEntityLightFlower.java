@@ -11,6 +11,9 @@ import net.minecraft.tileentity.TileEntity;
  */
 public class TileEntityLightFlower extends TileEntity
 {
+    private String blockName;
+    private int blockDamage;
+
     public String getBlockName()
     {
         return blockName;
@@ -21,17 +24,15 @@ public class TileEntityLightFlower extends TileEntity
         this.blockName = blockName;
     }
 
-    private String blockName;
-
-    public int getBlockDamage() {
+    public int getBlockDamage()
+    {
         return blockDamage;
     }
 
-    public void setBlockDamage(int blockDamage) {
+    public void setBlockDamage(int blockDamage)
+    {
         this.blockDamage = blockDamage;
     }
-
-    private int blockDamage;
 
     @Override
     public void readFromNBT(NBTTagCompound tag)
