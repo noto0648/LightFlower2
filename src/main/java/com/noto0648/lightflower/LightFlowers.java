@@ -34,7 +34,6 @@ public class LightFlowers
         proxy.registers();
         lightFlower.init();
         GameRegistry.registerTileEntity(TileEntityLightFlower.class, "NotoMod.tileLightFlower");
-
     }
 
     @Mod.EventHandler
